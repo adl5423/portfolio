@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import { Button } from './Button';
+import { ReactComponent as Logo } from "./images/logo-portfolio-white.svg";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
             <nav className='Navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo'>
-                        ADLR <i className='fab fa-typo3' />
+                        <Logo /> <i className='fab fa-typo3' />
                     </Link>
                     <div className='menu-icon'>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
