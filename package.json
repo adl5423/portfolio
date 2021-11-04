@@ -13,7 +13,10 @@
     "react-icons": "^4.3.1",
     "react-native-web": "^0.17.5",
     "react-router-dom": "^5.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
+    "react-single-page-navigation": "^1.0.1",
     "scss": "^0.2.4",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"

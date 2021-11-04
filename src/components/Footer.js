@@ -6,6 +6,7 @@ import { ReactComponent as Linkedin } from "./logotypes/linkedin-icon-1.svg";
 import { ReactComponent as Github } from "./logotypes/github-icon-1.svg";
 import { ReactComponent as Email } from "./logotypes/email-icon.svg";
 import { ReactComponent as Logo } from "./images/logo-portfolio-white.svg";
+import ScrollButton from './ScrollButton';
 
 function Footer() {
     return (
@@ -30,6 +31,9 @@ function Footer() {
                 <p className="copyright">
                     Aisen D. Lopez Jr. ©2021-2022 All Rights Reserved
                 </p>
+
+                <ScrollButton />
+
             </div>
         </div>
     );

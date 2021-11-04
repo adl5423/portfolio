@@ -11,11 +11,11 @@ height: 2500px;
 `;
 
 export const Button = styled.div`
-position: absolute;
+position: relative;
 display: flex;
 justify-content: center;
 width: 100%;
-bottom: -525px;
+top: 15px;
 height: 0;
 font-size: 3rem;
 z-index: 1;

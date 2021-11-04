@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import { Button } from './Button';
 import Herovideo from './videos/herovideo.mp4';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Hero() {
     return (
@@ -16,6 +17,17 @@ function Hero() {
                 <h1 className="mission-parttwo">
                     Believe It's Possible.
                 </h1>
+                <div className="next-page">
+                    <h2 className="swiper">
+                        Wepa! My name is Aisen, and welcome to my website!
+                    </h2>
+                    <div class="round">
+                        <div id="cta">
+                            <span class="arrow primera next "></span>
+                            <span class="arrow segunda next "></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
