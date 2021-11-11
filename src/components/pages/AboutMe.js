@@ -7,7 +7,7 @@ function AboutMe() {
         <>
             <div id="about-me">
                 <BiographyOne />
-                {/* <BiographyTwo /> */}
+                <BiographyTwo />
             </div>
         </>
     )

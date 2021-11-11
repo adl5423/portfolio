@@ -1,0 +1,52 @@
+@import "/./src/assets/index.scss";
+
+.two-container {
+    background-color: $white;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container {
+    background-color: $secondary;
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.skills-title {
+    font-size: 26px;
+    color: $white;
+    letter-spacing: 3px;
+    font-family: "Archivo Narrow", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill {
+    font-size: 12px;
+    color: $white;
+    letter-spacing: 3px;
+    font-family: "Archivo Narrow", sans-serif;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 50%;
+    border-color: $white;
+}

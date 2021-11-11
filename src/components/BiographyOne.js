@@ -1,6 +1,11 @@
 import React from 'react';
 import './BiographyOne.scss';
-import { ReactComponent as Divider } from "./images/divider.svg";
+import { ReactComponent as Finish } from "./images/IconsSVG/finish-flag.svg";
+import { ReactComponent as Bulb } from "./images/IconsSVG/bulb-icon.svg";
+import { ReactComponent as Relay } from "./images/IconsSVG/relay.svg";
+import { ReactComponent as Brainstorm } from "./images/IconsSVG/brainstorm.svg";
+import { ReactComponent as Empathizer } from "./images/IconsSVG/empathizer.svg";
+import { ReactComponent as Waves } from "./images/waves.svg";
 
 function BiographyOne() {
     return (
@@ -11,37 +16,40 @@ function BiographyOne() {
                 </h1>
                 <div className="strengths-container">
                     <div className="quality-container">
+                        <Finish className="icon-logo" />
                         <h3 className="strength-title">
                             Believer
                         </h3>
-                        {/* <Divider className="divider" /> */}
                     </div>
                     <div className="quality-container">
+                        <Bulb className="icon-logo" />
                         <h3 className="strength-title">
                             Problem Solver
                         </h3>
-                        {/* <Divider className="divider" /> */}
                     </div>
                     <div className="quality-container">
+                        <Relay className="icon-logo" />
                         <h3 className="strength-title">
                             Coach
                         </h3>
-                        {/* <Divider className="divider" /> */}
                     </div>
                     <div className="quality-container">
+                        <Brainstorm className="icon-logo" />
                         <h3 className="strength-title">
                             Brainstormer
                         </h3>
-                        {/* <Divider className="divider" /> */}
                     </div>
                     <div className="quality-container">
+                        <Empathizer className="icon-logo" />
                         <h3 className="strength-title">
                             Empathizer
                         </h3>
-                        {/* <Divider className="divider" /> */}
                     </div>
                 </div>
             </div>
+            {/* <div className="waves">
+                <Waves />
+            </div> */}
         </>
     )
 }
