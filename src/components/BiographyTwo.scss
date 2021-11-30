@@ -1,10 +1,10 @@
 @import "/./src/assets/index.scss";
 
 .two-container {
-    //background-color: $white;
-    background: linear-gradient(-45deg, $white, $fifth, $contrast);
+    background: linear-gradient(132deg, $primary-dark, $third, #212335);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    overflow: hidden;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     justify-content: center;
     border-top: 3px solid $primary;
 
-    @keyframes gradient {
+    @keyframes Gradient {
         0% {
             background-position: 0% 50%;
         }
@@ -25,11 +25,101 @@
     }
 }
 
+.cube {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 230vh;
+    border: solid 2px $white;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: #fff;
+}
+
+.cube:nth-child(2) {
+    position: absolute;
+    animation-delay: 2s;
+    left: 25vw;
+    top: 230vh;
+}
+
+.cube:nth-child(3) {
+    position: absolute;
+    animation-delay: 4s;
+    left: 75vw;
+    top: 210vh;
+}
+
+.cube:nth-child(4) {
+    position: absolute;
+    animation-delay: 6s;
+    left: 90vw;
+    top: 200vh;
+}
+
+.cube:nth-child(5) {
+    position: absolute;
+    animation-delay: 10s;
+    left: 10vw;
+    top: 200vh;
+}
+
+.cube:nth-child(6) {
+    position: absolute;
+    animation-delay: 14s;
+    left: 58vw;
+    top: 200vh;
+}
+
+.cube:nth-child(7) {
+    position: absolute;
+    animation-delay: 20s;
+    left: 90vw;
+    top: 230vh;
+}
+
+.cube:nth-child(8) {
+    position: absolute;
+    animation-delay: 26s;
+    left: 7vw;
+    top: 225vh;
+}
+
+.cube:nth-child(9) {
+    position: absolute;
+    animation-delay: 32s;
+    left: 67vw;
+    top: 230vh;
+}
+
+.cube:nth-child(10) {
+    position: absolute;
+    animation-delay: 40s;
+    left: 55vw;
+    top: 222vh;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
 .info-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .skills-container {
@@ -74,7 +164,7 @@ hr {
 .exp-container {
     background-color: $secondary;
     border-radius: 10px;
-    padding: 0 80px;
+    padding: 0 50px;
     width: 30%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -94,7 +184,7 @@ hr {
 .exp-desc {
     font-size: 14px;
     color: $white;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
     //padding-bottom: 25px;
@@ -127,11 +217,12 @@ hr {
 }
 
 .mission-desc {
-    font-size: 14px;
+    font-size: 12px;
     color: $white;
     letter-spacing: 2px;
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .vision-container {
@@ -155,11 +246,12 @@ hr {
 }
 
 .vision-desc {
-    font-size: 14px;
+    font-size: 12px;
     color: $white;
     letter-spacing: 2px;
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .purpose-container {
@@ -182,9 +274,10 @@ hr {
 }
 
 .purpose-desc {
-    font-size: 14px;
+    font-size: 12px;
     color: $white;
     letter-spacing: 2px;
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }

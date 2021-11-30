@@ -4,13 +4,17 @@ import './BiographyTwo.scss';
 function BiographyTwo() {
     return (
         <div>
-            {/* <div className="wave-back">
-                <div class="wave wave1" />
-                <div class="wave wave2" />
-                <div class="wave wave3" />
-                <div class="wave wave4" />
-            </div> */}
             <div className="two-container">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
                 <div className="info-container">
                     <div className="skills-container">
                         <h2 className="skills-title">
