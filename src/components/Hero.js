@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import { Button } from './Button';
 import Herovideo from './videos/herovideo.mp4';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (

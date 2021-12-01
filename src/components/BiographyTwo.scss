@@ -1,7 +1,7 @@
 @import "/./src/assets/index.scss";
 
 .two-container {
-    background: linear-gradient(132deg, $primary-dark, $third, #212335);
+    background: linear-gradient(132deg, $primary-dark, $third, #0c0d18);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     overflow: hidden;
@@ -187,7 +187,6 @@ hr {
     letter-spacing: 1.5px;
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
-    //padding-bottom: 25px;
 }
 
 .mission-vision-container {
@@ -201,7 +200,6 @@ hr {
     background-color: $secondary;
     border-radius: 10px;
     padding: 0 20px;
-    //width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -229,7 +227,6 @@ hr {
     background-color: $secondary;
     border-radius: 10px;
     padding: 0 20px;
-    //width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 30px 0;
@@ -258,7 +255,6 @@ hr {
     background-color: $secondary;
     border-radius: 10px;
     padding: 0 20px;
-    //width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
 }

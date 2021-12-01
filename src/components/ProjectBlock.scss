@@ -1,0 +1,129 @@
+@import "/./src/assets/index.scss";
+//@import "susy";
+//@import "compass/reset";
+
+.container-background {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    border-top: 4px solid $white;
+    z-index: -1;
+
+    .stars,
+    .twinkling,
+    .clouds {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .stars {
+        z-index: 0;
+        background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+    }
+
+    .twinkling {
+        z-index: 1;
+        background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
+        animation: move-twink-back 200s linear infinite;
+    }
+
+    .clouds {
+        z-index: 2;
+        background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
+        animation: move-clouds-back 200s linear infinite;
+    }
+
+    @keyframes move-twink-back {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: -10000px 5000px;
+        }
+    }
+
+    @keyframes move-clouds-back {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 10000px 0;
+        }
+    }
+}
+
+.project-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.project-block-title {
+    font-size: 50px;
+    color: $white;
+    letter-spacing: 3px;
+    font-family: "Archivo Narrow", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.screenshots {
+    width: 350px;
+    margin: 0 20px;
+}
+
+.overlay {
+    position: relative;
+    //top: 0;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    background-color: #008cba;
+    z-index: 1;
+
+    .overlay:hover {
+        opacity: 1;
+    }
+}
+
+.context {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    bottom: 75px;
+}
+
+.context-desc {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    bottom: 0;
+}
