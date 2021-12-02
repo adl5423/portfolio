@@ -283,11 +283,6 @@ hr {
         flex-wrap: nowrap;
     }
 
-    .exp-container {
-        //max-width: 100%;
-        padding: 0 20px;
-    }
-
     .skills-title,
     .exp-title,
     .mission-title,
@@ -307,7 +302,7 @@ hr {
     .skills-container,
     .exp-container,
     .mission-vision-container {
-        margin: 15px 0;
+        margin: 15px 15px;
     }
 }
 
@@ -335,7 +330,11 @@ hr {
         flex-direction: column;
     }
 
-    //.mission-vision-container {
-    //max-width: 80%;
-    //}
+    .exp-container {
+        max-width: 60%;
+    }
+
+    .mission-vision-container {
+        max-width: 70%;
+    }
 }

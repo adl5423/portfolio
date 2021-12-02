@@ -128,3 +128,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 960px) {
+    .one-container {
+        background-position: right;
+    }
+}
