@@ -127,3 +127,29 @@
     text-align: center;
     bottom: 0;
 }
+
+@media screen and (max-width: 1440px) {
+    .project-container {
+        flex-wrap: wrap;
+    }
+
+    .screenshots {
+        margin: 15px 15px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .screenshots {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .project-container {
+        flex-wrap: wrap;
+    }
+
+    .photo-container {
+        flex-direction: column;
+    }
+}

@@ -286,3 +286,21 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+@media screen and (max-width: 760px) {
+    .hero-container {
+        flex-wrap: wrap;
+    }
+
+    .mission-partone {
+        font-size: 26px;
+    }
+
+    .mission-parttwo {
+        font-size: 36px;
+    }
+
+    .swiper {
+        font-size: 14px;
+    }
+}

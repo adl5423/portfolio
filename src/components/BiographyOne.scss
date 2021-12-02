@@ -118,3 +118,13 @@
         transform: translateX(1000px);
     }
 } */
+
+@media screen and (max-width: 1330px) {
+    .one-container {
+        flex-wrap: wrap;
+    }
+
+    .strengths-container {
+        flex-wrap: wrap;
+    }
+}

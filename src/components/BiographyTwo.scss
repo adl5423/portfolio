@@ -5,7 +5,7 @@
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     overflow: hidden;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,8 +164,8 @@ hr {
 .exp-container {
     background-color: $secondary;
     border-radius: 10px;
-    padding: 0 50px;
-    width: 30%;
+    padding: 0 30px;
+    max-width: 30%;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0 30px;
@@ -190,7 +190,7 @@ hr {
 }
 
 .mission-vision-container {
-    width: 30%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,4 +276,66 @@ hr {
     font-family: "Archivo Narrow", sans-serif;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+    .info-container {
+        flex-wrap: nowrap;
+    }
+
+    .exp-container {
+        //max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .skills-title,
+    .exp-title,
+    .mission-title,
+    .vision-title,
+    .purpose-title {
+        font-size: 12px;
+    }
+
+    .skill,
+    .exp-desc,
+    .mission-desc,
+    .vision-desc,
+    .purpose-desc {
+        font-size: 10px;
+    }
+
+    .skills-container,
+    .exp-container,
+    .mission-vision-container {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    //.exp-container {
+    //max-width: 80%;
+    //}
+
+    .cube,
+    .cube:nth-child(2),
+    .cube:nth-child(2n),
+    .cube:nth-child(3),
+    .cube:nth-child(4),
+    .cube:nth-child(5),
+    .cube:nth-child(6),
+    .cube:nth-child(7),
+    .cube:nth-child(8),
+    .cube:nth-child(9) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    //.mission-vision-container {
+    //max-width: 80%;
+    //}
 }
