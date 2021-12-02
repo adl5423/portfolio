@@ -99,22 +99,23 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 40px;
+        top: -20px;
         left: -100%;
-        opacity: 1;
+        opacity: 0;
         transition: all 0.5s ease;
     }
 
     .nav-menu.active {
         background: #242222;
-        left: -8%;
+        left: 0%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        padding: 0;
     }
 
     .nav-links {
-        text-align: center;
+        text-align: left;
         padding: 2rem;
         width: 100%;
         display: table;
@@ -131,6 +132,10 @@
         margin-left: 0;
     }
 
+    .nav-item {
+        height: none;
+    }
+
     .menu-icon {
         display: block;
         position: absolute;
@@ -139,6 +144,7 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        z-index: 100;
     }
 
     .fa-times {
