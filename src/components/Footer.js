@@ -25,7 +25,7 @@ function Footer() {
                 </div>
 
                 <Link to='/' className='footer-logo'>
-                    <Logo /> <i className='fab fa-typo3' />
+                    <Logo />
                 </Link>
 
                 <p className="copyright">
