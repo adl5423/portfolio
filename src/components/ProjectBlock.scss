@@ -104,7 +104,7 @@
     position: absolute;
     //top: 0;
     //bottom: 0;
-    //left: 0;
+    left: 15px;
     //right: 0;
     height: 100%;
     width: 100%;
@@ -140,15 +140,15 @@
     .project-container {
         flex-wrap: wrap;
     }
-
-    .screenshots {
-        margin: 15px 15px;
-    }
 }
 
 @media screen and (max-width: 1280px) {
     .screenshots {
         width: 225px;
+    }
+
+    .screenshots_overlay {
+        left: 0;
     }
 }
 
@@ -159,5 +159,9 @@
 
     .photo-container {
         flex-direction: column;
+    }
+
+    .screenshots {
+        margin: 15px 0;
     }
 }

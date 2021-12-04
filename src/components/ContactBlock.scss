@@ -98,12 +98,6 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     text-decoration: none;
-
-    .email-address:hover {
-        color: $fourth;
-        transition: all 0.3s ease-out;
-        height: 110%;
-    }
 }
 
 .phone-number {
@@ -120,12 +114,6 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     text-decoration: none;
-
-    .phone:hover {
-        color: $fourth;
-        transition: all 0.3s ease-out;
-        height: 110%;
-    }
 }
 
 .social-block {
