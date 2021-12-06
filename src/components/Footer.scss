@@ -42,6 +42,15 @@
     }
 }
 
+.linkedin:hover {
+    svg {
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s ease;
+        fill: $secondary;
+    }
+}
+
 .github {
     svg {
         width: 50px;
@@ -53,11 +62,32 @@
     }
 }
 
+.github:hover {
+    svg {
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s ease;
+    }
+
+    g {
+        fill: $secondary;
+    }
+}
+
 .email {
     svg {
         width: 50px;
         height: 50px;
         fill: $white;
+    }
+}
+
+.email:hover {
+    svg {
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s ease;
+        fill: $secondary;
     }
 }
 
@@ -73,6 +103,14 @@
     svg {
         width: 130px;
         height: 130px;
+    }
+}
+
+.footer-logo:hover {
+    svg {
+        width: 150px;
+        height: 150px;
+        transition: all 0.3s ease-in-out;
     }
 }
 

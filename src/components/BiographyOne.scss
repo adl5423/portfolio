@@ -101,23 +101,11 @@
     text-transform: uppercase;
 }
 
-/* .waves {
-    position: relative;
-    background-repeat: repeat;
-    bottom: 360px;
-    opacity: 35%;
-    //animation: waves 30s linear infinite;
+.strength-title:hover {
+    color: $secondary;
+    transition: all 0.6s ease;
+    font-size: 34px;
 }
-
-@keyframes waves {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(1000px);
-    }
-} */
 
 @media screen and (max-width: 1330px) {
     .one-container {

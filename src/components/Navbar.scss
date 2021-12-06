@@ -78,7 +78,7 @@
 }
 
 .fa-bars {
-    color: #fff;
+    color: $white;
 }
 
 .nav-links-mobile {
@@ -106,7 +106,7 @@
     }
 
     .nav-menu.active {
-        background: #242222;
+        background: $contrast;
         left: 0%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -122,9 +122,10 @@
     }
 
     .nav-links:hover {
-        background-color: #fff;
-        color: #242424;
+        background-color: $white;
+        color: $contrast;
         border-radius: 0;
+        height: 20px;
     }
 
     .navbar-logo {
@@ -148,7 +149,7 @@
     }
 
     .fa-times {
-        color: #fff;
+        color: $white;
         font-size: 2rem;
     }
 
@@ -161,15 +162,15 @@
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
-        color: #fff;
+        color: $white;
         padding: 14px 20px;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         transition: all 0.3s ease-out;
     }
 
     .nav-links-mobile:hover {
-        background: #fff;
-        color: #242424;
+        background: $white;
+        color: $contrast;
         transition: 250ms;
     }
 }
